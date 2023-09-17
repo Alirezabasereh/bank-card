@@ -1,0 +1,808 @@
+body main {
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+body main .animation {
+  animation: card forwards ease 0.5s;
+}
+@keyframes card {
+  to {
+    position: relative !important;
+    top: 31.7%;
+    left: 36.35%;
+  }
+}
+body main .card-move {
+  position: absolute;
+  top: 28%;
+  left: 22.5%;
+}
+body main .card-container1 {
+  transform-style: preserve-3d;
+  width: 420px;
+  height: 270px;
+  transition: 0.4s;
+  transition-property: transform;
+  cursor: pointer;
+}
+body main .card-container1:hover {
+  transform: perspective(800px) rotateY(180deg);
+  transition: 0.4s;
+}
+body main .card-container1 .back {
+  position: absolute;
+  width: 420px;
+  height: 270px;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  z-index: -1;
+  background-color: rgb(234, 234, 234);
+  border-radius: 10px;
+  transform: rotateY(180deg);
+}
+body main .card-container1 .back > span:nth-of-type(1) {
+  text-transform: capitalize;
+  font-size: 10px;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 20px;
+  color: rgb(84, 84, 84);
+}
+body main .card-container1 .back .magnet {
+  width: 100%;
+  height: 55px;
+  background-color: rgb(32, 32, 32);
+  margin-top: 5px;
+}
+body main .card-container1 .back > span:nth-of-type(2) {
+  text-transform: capitalize;
+  font-size: 10px;
+  color: rgb(84, 84, 84);
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+body main .card-container1 .back > .signature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .card-container1 .back > .signature > div:nth-of-type(1) {
+  width: 60%;
+  height: 45px;
+  margin-left: 20px;
+  position: relative;
+  background: rgb(213, 213, 213);
+  background: linear-gradient(180deg, rgb(213, 213, 213) 10%, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 20%, rgb(213, 213, 213) 20%, rgb(213, 213, 213) 30%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 40%, rgb(213, 213, 213) 40%, rgb(213, 213, 213) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 60%, rgb(213, 213, 213) 60%, rgb(213, 213, 213) 70%, rgb(255, 255, 255) 70%, rgb(255, 255, 255) 80%, rgb(213, 213, 213) 80%, rgb(213, 213, 213) 90%, rgb(255, 255, 255) 90%);
+}
+body main .card-container1 .back > .signature > div:nth-of-type(1) > span:nth-of-type(1) {
+  text-transform: capitalize;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+body main .card-container1 .back > .signature > div:nth-of-type(1) > .cvvtext {
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+body main .card-container1 .back > .signature > div:nth-of-type(2) {
+  width: 20%;
+  height: 50px;
+  margin-right: 20px;
+  background-image: url(img/ch90gvJw_b.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .card-container1 .back > span:nth-of-type(3) {
+  text-transform: capitalize;
+  font-size: 10px;
+  margin-left: 168px;
+  margin-top: 4px;
+  display: flex;
+  width: 100%;
+  color: rgb(84, 84, 84);
+}
+body main .card-container1 .back .third-sec2 {
+  font-size: 35px;
+  color: rgba(208, 208, 208, 0.234);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  letter-spacing: 4px;
+  transform: rotateY(180deg);
+  margin-top: -5px;
+  background-color: rgba(123, 123, 123, 0.4156862745);
+  color: transparent;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body main .card-container1 .back .third-sec2 > span {
+  display: flex;
+}
+body main .card-container1 .back .third-sec2 > span:nth-of-type(4),
+body main .card-container1 .back .third-sec2 > span:nth-of-type(8),
+body main .card-container1 .back .third-sec2 > span:nth-of-type(12) {
+  margin-right: 20px;
+}
+body main .card-container1 .back > span:nth-of-type(4) {
+  text-transform: capitalize;
+  font-size: 9px;
+  color: #7b7b7b;
+  margin-top: -5px;
+  margin-left: 20px;
+  display: flex;
+  width: 65%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body main .card-container1 .maincard {
+  width: 420px;
+  height: 270px;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateZ(1px);
+  box-shadow: rgba(35, 44, 93, 0.256) 0px 12px 24px 0px;
+  background-color: rgb(36, 36, 36);
+  background-size: cover;
+  padding: 20px;
+  transition: 0.4s;
+  transition-property: background-image, background-color;
+  overflow: hidden;
+}
+body main .card-container1 .maincard .world-map {
+  position: absolute;
+  top: -20px;
+  left: 50px;
+  width: 80%;
+  z-index: -100;
+  opacity: 0.5;
+}
+body main .card-container1 .maincard > .first-sec {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .card-container1 .maincard > .first-sec > .bank-name {
+  text-transform: capitalize;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+body main .card-container1 .maincard > .first-sec .card-logo {
+  width: 100px;
+  height: 30px;
+  height: 100%;
+  margin-right: -10px;
+  opacity: 0;
+}
+body main .card-container1 .maincard .second-sec {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+body main .card-container1 .maincard .second-sec .chip {
+  width: 60px;
+  height: 100%;
+}
+body main .card-container1 .maincard .second-sec .nfc {
+  width: 30px;
+  height: 100%;
+  margin-right: 5px;
+}
+body main .card-container1 .maincard .third-sec {
+  font-size: 35px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  letter-spacing: 4px;
+  margin-top: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body main .card-container1 .maincard .third-sec > span {
+  display: flex;
+}
+body main .card-container1 .maincard .third-sec > span:nth-of-type(4),
+body main .card-container1 .maincard .third-sec > span:nth-of-type(8),
+body main .card-container1 .maincard .third-sec > span:nth-of-type(12) {
+  margin-right: 20px;
+}
+body main .card-container1 .maincard .fourth-sec {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+body main .card-container1 .maincard .fourth-sec > span:nth-of-type(1) {
+  font-size: 12px;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100 !important;
+  margin-left: 3px;
+}
+body main .card-container1 .maincard .fourth-sec > span:nth-of-type(2) {
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  line-height: 12px;
+  margin-right: 15px;
+}
+body main .card-container1 .maincard .fifth-sec {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px;
+  position: relative;
+}
+body main .card-container1 .maincard .fifth-sec > span:nth-of-type(1) {
+  font-size: 22px;
+  color: white;
+  text-transform: capitalize;
+}
+body main .card-container1 .maincard .fifth-sec > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+body main .card-container1 .maincard .fifth-sec > div > span:nth-of-type(1) {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+body main .card-container1 .maincard .fifth-sec > div > span:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body main .selected-logo {
+  border: 2px solid rgb(255, 179, 0) !important;
+}
+body main .logo-on {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+body main .log-off {
+  visibility: hidden !important;
+}
+body main .card-rotate {
+  transform: perspective(800px) translate(-50%, -50%) rotateY(180deg) !important;
+}
+body main .box-container {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+  margin: 0px 20px;
+  overflow: hidden;
+  border: 2px solid rgba(208, 208, 208, 0.484);
+}
+@media screen and (max-width: 992px) {
+  body main .box-container {
+    height: 680px;
+  }
+}
+body main .box-container > .div-right {
+  width: 40%;
+  height: 100%;
+  background-color: rgb(0, 160, 255);
+}
+@media screen and (max-width: 992px) {
+  body main .box-container > .div-right {
+    width: 100%;
+    height: 45%;
+  }
+}
+body main .box-container > .div-right .card-container {
+  transform-style: preserve-3d;
+  position: relative;
+  width: 420px;
+  height: 270px;
+  top: 45%;
+  left: 70%;
+  transform: perspective(800px) translate(-50%, -50%);
+  transition: 0.4s;
+  transition-property: transform;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  body main .box-container > .div-right .card-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+body main .box-container > .div-right .card-container:hover {
+  transform: perspective(800px) translate(-50%, -50%) rotateY(180deg);
+  transition: 0.4s;
+}
+body main .box-container > .div-right .card-container .back {
+  position: absolute;
+  width: 420px;
+  height: 270px;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  z-index: -1;
+  background-color: rgb(234, 234, 234);
+  border-radius: 10px;
+  transform: rotateY(180deg);
+}
+body main .box-container > .div-right .card-container .back > span:nth-of-type(1) {
+  text-transform: capitalize;
+  font-size: 10px;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 20px;
+  color: rgb(84, 84, 84);
+}
+body main .box-container > .div-right .card-container .back .magnet {
+  width: 100%;
+  height: 55px;
+  background-color: rgb(32, 32, 32);
+  margin-top: 5px;
+}
+body main .box-container > .div-right .card-container .back > span:nth-of-type(2) {
+  text-transform: capitalize;
+  font-size: 10px;
+  color: rgb(84, 84, 84);
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+body main .box-container > .div-right .card-container .back > .signature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .box-container > .div-right .card-container .back > .signature > div:nth-of-type(1) {
+  width: 60%;
+  height: 45px;
+  margin-left: 20px;
+  position: relative;
+  background: rgb(213, 213, 213);
+  background: linear-gradient(180deg, rgb(213, 213, 213) 10%, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 20%, rgb(213, 213, 213) 20%, rgb(213, 213, 213) 30%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 40%, rgb(213, 213, 213) 40%, rgb(213, 213, 213) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 60%, rgb(213, 213, 213) 60%, rgb(213, 213, 213) 70%, rgb(255, 255, 255) 70%, rgb(255, 255, 255) 80%, rgb(213, 213, 213) 80%, rgb(213, 213, 213) 90%, rgb(255, 255, 255) 90%);
+}
+body main .box-container > .div-right .card-container .back > .signature > div:nth-of-type(1) > span:nth-of-type(1) {
+  text-transform: capitalize;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+body main .box-container > .div-right .card-container .back > .signature > div:nth-of-type(1) > .cvvtext {
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+body main .box-container > .div-right .card-container .back > .signature > div:nth-of-type(2) {
+  width: 20%;
+  height: 50px;
+  margin-right: 20px;
+  background-image: url(img/ch90gvJw_b.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .box-container > .div-right .card-container .back > span:nth-of-type(3) {
+  text-transform: capitalize;
+  font-size: 10px;
+  margin-left: 168px;
+  margin-top: 4px;
+  display: flex;
+  width: 100%;
+  color: rgb(84, 84, 84);
+}
+body main .box-container > .div-right .card-container .back .third-sec2 {
+  font-size: 35px;
+  color: rgba(208, 208, 208, 0.234);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  letter-spacing: 4px;
+  transform: rotateY(180deg);
+  margin-top: -5px;
+  background-color: rgba(123, 123, 123, 0.4156862745);
+  color: transparent;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body main .box-container > .div-right .card-container .back .third-sec2 > span {
+  display: flex;
+}
+body main .box-container > .div-right .card-container .back .third-sec2 > span:nth-of-type(4),
+body main .box-container > .div-right .card-container .back .third-sec2 > span:nth-of-type(8),
+body main .box-container > .div-right .card-container .back .third-sec2 > span:nth-of-type(12) {
+  margin-right: 20px;
+}
+body main .box-container > .div-right .card-container .back > span:nth-of-type(4) {
+  text-transform: capitalize;
+  font-size: 9px;
+  color: #7b7b7b;
+  margin-top: -5px;
+  margin-left: 20px;
+  display: flex;
+  width: 65%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body main .box-container > .div-right .card-container .maincard {
+  width: 420px;
+  height: 270px;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateZ(1px);
+  box-shadow: rgba(35, 44, 93, 0.256) 0px 12px 24px 0px;
+  background-color: rgb(36, 36, 36);
+  background-size: cover;
+  padding: 20px;
+  transition: 0.4s;
+  transition-property: background-image, background-color;
+  overflow: hidden;
+}
+body main .box-container > .div-right .card-container .maincard .world-map {
+  position: absolute;
+  top: -20px;
+  left: 50px;
+  width: 80%;
+  z-index: -100;
+  opacity: 0.5;
+}
+body main .box-container > .div-right .card-container .maincard > .first-sec {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .box-container > .div-right .card-container .maincard > .first-sec > .bank-name {
+  text-transform: capitalize;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+body main .box-container > .div-right .card-container .maincard > .first-sec .card-logo {
+  width: 100px;
+  height: 30px;
+  height: 100%;
+  margin-right: -10px;
+  opacity: 0;
+}
+body main .box-container > .div-right .card-container .maincard .second-sec {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+body main .box-container > .div-right .card-container .maincard .second-sec .chip {
+  width: 60px;
+  height: 100%;
+}
+body main .box-container > .div-right .card-container .maincard .second-sec .nfc {
+  width: 30px;
+  height: 100%;
+  margin-right: 5px;
+}
+body main .box-container > .div-right .card-container .maincard .third-sec {
+  font-size: 35px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  letter-spacing: 4px;
+  margin-top: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body main .box-container > .div-right .card-container .maincard .third-sec > span {
+  display: flex;
+}
+body main .box-container > .div-right .card-container .maincard .third-sec > span:nth-of-type(4),
+body main .box-container > .div-right .card-container .maincard .third-sec > span:nth-of-type(8),
+body main .box-container > .div-right .card-container .maincard .third-sec > span:nth-of-type(12) {
+  margin-right: 20px;
+}
+body main .box-container > .div-right .card-container .maincard .fourth-sec {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+body main .box-container > .div-right .card-container .maincard .fourth-sec > span:nth-of-type(1) {
+  font-size: 12px;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100 !important;
+  margin-left: 3px;
+}
+body main .box-container > .div-right .card-container .maincard .fourth-sec > span:nth-of-type(2) {
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  line-height: 12px;
+  margin-right: 15px;
+}
+body main .box-container > .div-right .card-container .maincard .fifth-sec {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px;
+  position: relative;
+}
+body main .box-container > .div-right .card-container .maincard .fifth-sec > span:nth-of-type(1) {
+  font-size: 22px;
+  color: white;
+  text-transform: capitalize;
+}
+body main .box-container > .div-right .card-container .maincard .fifth-sec > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+body main .box-container > .div-right .card-container .maincard .fifth-sec > div > span:nth-of-type(1) {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+body main .box-container > .div-right .card-container .maincard .fifth-sec > div > span:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body main .box-container > .div-left {
+  width: 60%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+@media screen and (max-width: 992px) {
+  body main .box-container > .div-left {
+    width: 100%;
+    height: 55%;
+    padding-top: 20px;
+    align-items: center;
+  }
+}
+body main .box-container > .div-left h1 {
+  text-transform: capitalize;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  body main .box-container > .div-left h1 {
+    margin-top: 30px;
+  }
+}
+body main .box-container > .div-left > .inputs {
+  width: 400px;
+}
+@media screen and (min-width: 992px) {
+  body main .box-container > .div-left > .inputs {
+    margin-left: 150px;
+    margin-top: 100px;
+  }
+}
+body main .box-container > .div-left > .inputs .logos {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body main .box-container > .div-left > .inputs .logos > div {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(220, 220, 220);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: rgba(35, 44, 93, 0.123) 0px 0px 5px 0px;
+  transition: 0.4s;
+}
+body main .box-container > .div-left > .inputs .logos > div img {
+  width: 90%;
+}
+body main .box-container > .div-left > .inputs label[for=holder-name] {
+  display: flex;
+  width: 100%;
+  text-transform: capitalize;
+  color: rgb(186, 186, 186);
+  font-weight: 100;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+body main .box-container > .div-left > .inputs #holder-name {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  display: flex;
+  width: 72.5%;
+  height: 40px;
+  margin-left: 60px;
+}
+body main .box-container > .div-left > .inputs .number-cvv {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+body main .box-container > .div-left > .inputs .number-cvv > div {
+  width: 50%;
+}
+body main .box-container > .div-left > .inputs .number-cvv label[for=card-number] {
+  display: flex;
+  width: 100%;
+  text-transform: capitalize;
+  color: rgb(186, 186, 186);
+  font-weight: 100;
+}
+body main .box-container > .div-left > .inputs .number-cvv #card-number {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+body main .box-container > .div-left > .inputs .number-cvv label[for=cvv] {
+  display: flex;
+  width: 30%;
+  text-transform: capitalize;
+  color: rgb(186, 186, 186);
+  font-weight: 100;
+  margin-left: 30px;
+}
+body main .box-container > .div-left > .inputs .number-cvv #cvv {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  display: flex;
+  width: 30%;
+  height: 40px;
+  margin-left: 30px;
+}
+body main .box-container > .div-left > .inputs > .time {
+  margin-top: 40px;
+  display: flex;
+  height: 30px;
+  margin-left: 60px;
+}
+body main .box-container > .div-left > .inputs > .time > div:nth-of-type(1) {
+  display: flex;
+}
+body main .box-container > .div-left > .inputs > .time > div:nth-of-type(1) label[for=exp-month] {
+  display: flex;
+  width: 100%;
+  text-transform: capitalize;
+  color: rgb(186, 186, 186);
+  font-weight: 100;
+}
+body main .box-container > .div-left > .inputs > .time > div:nth-of-type(1) select {
+  width: 75px;
+  border-radius: 5px;
+}
+body main .box-container > .div-left > .inputs > .time > div:nth-of-type(2) {
+  display: flex;
+  margin-left: 20px;
+}
+body main .box-container > .div-left > .inputs > .time > div:nth-of-type(2) label[for=exp-year] {
+  display: flex;
+  width: 100%;
+  text-transform: capitalize;
+  color: rgb(186, 186, 186);
+  font-weight: 100;
+}
+body main .box-container > .div-left > .inputs > .time > div:nth-of-type(2) select {
+  width: 75px;
+  border-radius: 5px;
+}
+body main .box-container > .div-left > .inputs .result {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(0, 160, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 110px;
+  text-transform: capitalize;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}/*# sourceMappingURL=stylesheet.css.map */
